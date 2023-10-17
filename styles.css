@@ -30,9 +30,9 @@ header .logo {
   font-weight: 500;
 
 }
-.btn-custom-rounded {
-  padding: 5px 9px !important;
-}
+/* .btn-custom-rounded {
+  padding: 5px 7px !important;
+} */
 
 .btn-custom-white:hover {
   opacity: 0.8;
@@ -138,7 +138,7 @@ footer h3 {
   width: 100%;
   height: 350px;
   display: block;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 80.17%);
+  background: linear-gradient(180deg, rgba(23, 23, 23, 0.00) 0%, #171717 100%);
   position: absolute;
   left: 0;
   z-index: 2;
@@ -244,4 +244,82 @@ section {
 }
 section:hover {
   z-index: 9;
+}
+
+/* MODAL */
+.modal-dialog, .modal-content {
+  background: #171717;
+}
+.modal-dialog {
+  max-width: 600px;
+}
+
+.modal-hero {
+  height: 300px;
+  background-image: url(assets/img-hero.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 40px;
+  margin-bottom: 30px;
+}
+.modal-hero::after {
+  content: '';
+  width: 100%;
+  height: 200px;
+  display: block;
+  background: linear-gradient(180deg, rgba(23, 23, 23, 0.00) 0%, #171717 100%);
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  top: calc(300px - 200px);
+}
+.modal-hero img {
+  width: 250px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 2;
+  
+}
+
+.modal-hero-info {
+  position: relative;
+  z-index: 2;
+}
+.modal-hero-info button:first-child {
+  margin-right: 20px;
+}
+
+.filme-description {
+  font-size: 15px;
+  color: #fff;
+}
+.filme-cast {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.55);
+  
+}
+.filme-cast text {
+  color: #fff;
+}
+
+#list-ep {
+  list-style: none;
+  padding: 0;
+}
+
+#list-ep li {
+  transition: 0.5s ease;
+}
+#list-ep li:hover {
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+#list-ep li {
+  padding: 20px;
+}
+#list-ep li p {
+  font-size: 13px;
 }
